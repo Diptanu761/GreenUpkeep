@@ -210,6 +210,7 @@ footer{
   display: inline-block;
   border: none;
   background: whitesmoke;
+  font-family: 'Bree Serif', serif;
 }
 
 /* Add a background color when the inputs get focus */
@@ -239,8 +240,9 @@ button:hover {
 
 /* Extra styles for the cancel button */
 .cancelbtn {
-  padding: 3px 10px;
+  padding: 6px 10px;
   background-color: whitesmoke;
+  font-family: 'Bree Serif', serif;
 }
 
 /* Float cancel and signup buttons and add an equal width */
@@ -252,6 +254,7 @@ button:hover {
 /* Add padding to container elements */
 .container {
   padding: 16px;
+  font-family: 'Bree Serif', serif;
 }
 
 /* The Modal (background) */
@@ -266,6 +269,7 @@ button:hover {
   overflow: auto; /* Enable scroll if needed */
   background: url('leafy.jpg') no-repeat center center/cover;
   padding-top: 50px;
+  font-family: 'Bree Serif', serif;
 }
 
 /* Modal Content/Box */
@@ -274,7 +278,7 @@ button:hover {
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
-
+  font-family: 'Bree Serif', serif;
 }
 .modal-content:hover,
 .modal-content:focus {
@@ -286,6 +290,7 @@ button:hover {
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
+  font-family: 'Bree Serif', serif;
 }
 hr:hover,
 hr:focus {
@@ -299,13 +304,16 @@ hr:focus {
   top: 15px;
   font-size: 40px;
   font-weight: bold;
-  color: #f1f1f1;
+  color: indianred;
+  border: 0px;
+
 }
 
 .close:hover,
 .close:focus {
-  color: indianred;
+  color: whitesmoke;
   cursor: pointer;
+  background-color: red;
 }
 
 /* Clear floats */
@@ -319,8 +327,45 @@ hr:focus {
 @media screen and (max-width: 300px) {
   .cancelbtn, .signupbtn {
     width: 100%;
+    font-family: 'Bree Serif', serif;
   }
 }
 .h2{
     position: centre;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: inline-block;
 }

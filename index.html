@@ -18,12 +18,12 @@
             <li class="item"><a href="#services-container">Our Services</a></li>
             <li class="item"><a href="#client-section">Partners</a></li>
             <li class="item"><a href="#contact">Contact Us</a></li>
-            <li class="item"><a href="#contact">Login</a></li>
+            <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button>
             <button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
         </ul>
     </nav>
     <div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">Close</span>
+  <button onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">Close</button>
   <form class="modal-content" action="/action_page.php">
     <div class="container">
       <h1>Sign Up</h1>
@@ -90,27 +90,29 @@
     
     </section>
     <section id="contact">
-        <h1 class="h-primary center">Contact Us</h1>
-        <div id="contact-box">
-            <form action="">
-                <div class="form-group">
-                    <label for="name">Name: </label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email: </label>
-                    <input type="email" name="name" id="email" placeholder="Enter your email">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number: </label>
-                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message: </label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                </div>
-            </form>
-        </div>
+        <h1>Contact Form</h1>
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
     </section>
 </body>
 </html>
