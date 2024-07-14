@@ -214,19 +214,16 @@ footer{
 .btn{
     padding: 6px 20px;
     border: 2px solid white;
-    background-color: seagreen; 
-    color: white;
+    background-color: grey; 
+    color: black;
     margin: 17px;
     font-size: 1.5rem;
     border-radius: 10px;
     cursor:pointer;
     font-family: 'Baloo Bhai', cursive;
+    transition: 0.3s;
 }
 .btn:hover{
     color: white;
-    background-color: black;
+    background-color: seagreen;
 }   
-
-.center{
-    text-align: center;
-}
